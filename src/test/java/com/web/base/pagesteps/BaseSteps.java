@@ -1,6 +1,5 @@
 package com.web.base.pagesteps;
 
-import com.web.base.pages.ExamplePage;
 import com.thoughtworks.gauge.Step;
 import com.web.base.utils.driver.Driver;
 

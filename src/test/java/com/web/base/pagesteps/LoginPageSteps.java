@@ -11,4 +11,10 @@ public class LoginPageSteps {
     public void fillLoginFormSteps(){
         loginPage.fillLoginForm();
     }
+
+    @Step("Giriş işleminin başarılı olduğu doğrulanır.")
+    public void loginAssertion(){
+
+        loginPage.loginAssert();
+    }
 }

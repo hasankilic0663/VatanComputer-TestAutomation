@@ -8,14 +8,12 @@ public class HomePageSteps extends HomePage {
 
     @Step("Login sayfasına gidilir.")
     public void goLogin(){
-        homePage.loginPageEnter();
+
+        homePage.loginSet();
     }
 
-    @Step("Login sayfasına gideriz")
-    public void loginGecis() {
-        loginSet();
 
-    }
+
     @Step("Sehir arama yapılır")
     public void sehirAramaYap() throws InterruptedException {
         searchSehirAramaSet();
