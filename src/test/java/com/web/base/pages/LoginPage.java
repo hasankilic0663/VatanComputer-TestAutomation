@@ -23,10 +23,11 @@ public class LoginPage {
 
     private static BeinLabel label_EmailDogrulama=new BeinLabel(PageElementModel.selectorNames.CSS_SELECTOR,"input.form-control.email-input");
 
-
+    private static BeinButton BTN_Cookie = new BeinButton(PageElementModel.selectorNames.XPATH,"//button[@class='cc-nb-okagree']");
 
     public void fillLoginForm(){
         log.debug("Fiiling Login Form");
+        BTN_Cookie.clickAndWait();
         TXT_Email.type(USER_EMAIL);
         TXT_Password.type(USER_PASSWORD);
 
